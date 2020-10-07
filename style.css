@@ -42,3 +42,9 @@ a.nav-link:hover {
     background-image: linear-gradient(to bottom right, #000000, #9e9e9e00);
     opacity: .6;
 }
+
+.hero>h1{
+    color:white;
+    font-size: 2em;
+    padding-top: 300px;
+}
