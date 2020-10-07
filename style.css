@@ -3,12 +3,9 @@ html {
     height: 100%;
 }
 
-#header>.navbar{
-    background-color: #0000004a;
-
-}
-button.navbar-toggler{
-    background-color: white;
+.fa-bars{
+color: white;
+font-size: 40px;
 }
 
 .top-logo{
