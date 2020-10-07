@@ -1,60 +1,29 @@
-let TxtRotate = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+function appear(elm, i, step, speed) {
+    let t_o;
+    //initial opacity
+    i = i || 0;
+    //opacity increment
+    step = step || 5;
+    //time waited between two opacity increments in msec
+    speed = speed || 50;
 
-TxtRotate.prototype.tick = function () {
-    let i = this.loopNum % this.toRotate.length;
-    let fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-    let that = this;
-    let delta = 300 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function () {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function () {
-    let elements = document.getElementsByClassName('txt-rotate');
-    for (let i = 0; i < elements.length; i++) {
-        let toRotate = elements[i].getAttribute('data-rotate');
-        let period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    t_o = setInterval(function () {
+        //get opacity in decimals
+        let opacity = i / 100;
+        //set the next opacity step
+        i = i + step;
+        if (opacity > 1 || opacity < 0) {
+            clearInterval(t_o);
+            //if 1-opaque or 0-transparent, stop
+            return;
         }
-    }
-    // INJECT CSS
-    let css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-    document.body.appendChild(css);
-};
+        //modern browsers
+        elm.style.opacity = opacity;
+        //older IE
+        elm.style.filter = 'alpha(opacity=' + opacity * 100 + ')';
+    }, speed);
+}
 
-
-
-Resources
+appear(document.getElementsByClassName('hero-name')[0], 0, 5, 100);
+appear(document.getElementsByClassName('hero-welcome')[0], 0, 5, 150);
+appear(document.getElementsByClassName('arrow-down')[0], 0, 5, 200);

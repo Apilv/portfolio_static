@@ -12,14 +12,14 @@
 </head>
 <body>
     <div class="hero-bg">
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-black fixed-top container">
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-black fixed-top container">
                 <a class="navbar-brand" href="#">
                     <img src="./img/whiteLogo.png" class="top-logo" alt="">
                 </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
                     </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto text-center">
@@ -38,17 +38,20 @@
                         </li>
                     </ul>
                 </div>
-        </nav>
-    </header>
-        <div class="hero container">
-            <h1 class="text-center">
-                <span class="txt-rotate" data-period="100"
-                data-rotate='[ "Hello", "My name is Andrius Pilvelis", "Im a Web Developer!" ]'></span>
-            </h1>
-        </div>
+            </nav>
+        </header>
+    </div>
+    <div class="hero text-center">
+        <h1 class="hero-name">
+            Hello My name is <span class="myName">Andrius</span>
+        </h1>
+        <h3 class="hero-welcome">Welcome to my Web resume</h3>
+        <div class="arrow-down">
+            <a href="#about-me"><i class="fas fa-angle-double-down" id="arrow"></i></a>
+    </div>
     </div>
     <main>
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             My Photo
             Text About
             Download button
@@ -63,7 +66,8 @@
             Contact Form
         </div>
     </main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum, risus nec gravida sagittis, risus
+    <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum, risus nec gravida
+        sagittis, risus
         justo pretium nibh, lacinia hendrerit arcu erat consectetur odio. Proin libero ante, vestibulum at enim ac,
         aliquam viverra elit. Mauris ultricies neque ligula, tincidunt volutpat magna dictum id. Pellentesque habitant
         morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque quis aliquet diam, eget
@@ -207,16 +211,16 @@
         Logo
         Copyright details
     </footer>
-    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/23d71ddeb9.js" crossorigin="anonymous"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
    </script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
    </script>
+   <script src="app.js"></script>
 </body>
 </html>
