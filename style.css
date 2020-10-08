@@ -111,7 +111,7 @@ font-size: 40px;
 
 .about-me{
     height: 40vh;
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
 
 .vertical-center {
@@ -134,10 +134,18 @@ font-size: 40px;
 }
 
 
+.my-skills {
+    background-color: #f3f3f3;
+    height: 40vh;
+}
+
 .skills-icons>div{
     font-size: 80px;
     width: 100px;
     height: 150px;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
 
 
