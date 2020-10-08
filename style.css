@@ -111,15 +111,12 @@ font-size: 40px;
 
 .about-me{
     height: 40vh;
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
 
 .vertical-center {
     min-height: 100%;
-    /* Fallback for browsers do NOT support vh unit */
     min-height: 100vh;
-    /* These two lines are counted as one :-)       */
-
     display: flex;
     align-items: center;
 }
@@ -134,4 +131,32 @@ font-size: 40px;
 
 .dark-arrow-down{
     color: rgb(84, 84, 84);
+}
+
+
+.my-skills {
+    background-color: #f3f3f3;
+    height: 40vh;
+}
+
+.skills-icons>div{
+    font-size: 80px;
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+
+.fa-html5 {
+    color: rgb(255, 123, 0);
+}
+
+.fa-css3-alt {
+  color: #2B6CB0;
+}
+
+.fa-php{
+    color: purple;
 }
