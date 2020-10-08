@@ -2,6 +2,9 @@ body,
 html {
     height: 100%;
 }
+.navbar{
+    z-index: 100;
+}
 
 
 .top-logo{
@@ -24,7 +27,7 @@ color: white;
 font-size: 40px;
 }
 
-.hero-bg{
+.cover-bg{
     background-image: url("./img/Quantum-Computer-Code-Concept.gif");
     height: 100%;
     background-position: center;
@@ -32,7 +35,7 @@ font-size: 40px;
     background-size: cover;
 }
 
-.hero-bg:before {
+.cover-bg:before {
     content: '';
     position: absolute;
     top: 0;
@@ -107,7 +110,7 @@ font-size: 40px;
 
 
 .about-me{
-    height: 110vh;
+    height: 40vh;
     background-color: #f3f3f3;
 }
 
@@ -121,6 +124,14 @@ font-size: 40px;
     align-items: center;
 }
 
-.about-text{
-    background-color: rgba(255, 255, 255, 0.35);
+.fa-file-download{
+    font-size: 30px;
+    color: rgb(23, 23, 194);
+}
+.fa-linkedin{
+    font-size: 30px;
+}
+
+.dark-arrow-down{
+    color: rgb(84, 84, 84);
 }
