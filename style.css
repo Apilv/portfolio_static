@@ -188,5 +188,7 @@ font-size: 40px;
 
 
 footer{
+    height: 50px;
+    padding-top: 8px;
     background-color: #000000;
 }
