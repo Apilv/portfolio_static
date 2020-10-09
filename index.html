@@ -13,7 +13,8 @@
 <body>
     <div class="cover-bg">
         <header id="header">
-            <nav class="navbar navbar-expand-lg navbar-black container">
+            <nav class="navbar navbar-expand-lg navbar-black fixed-top">
+                <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./img/whiteLogo.png" class="top-logo" alt="">
                 </a>
@@ -24,19 +25,20 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="#header">Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
+                            <a class="nav-link" href="#about-me">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My Skills</a>
+                            <a class="nav-link" href="#my-skills">My Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#contact-me">Contact Me</a>
                         </li>
                     </ul>
+                </div>
                 </div>
             </nav>
         </header>
@@ -53,7 +55,7 @@
     <main>
         <div class="about-me vertical-center" id="about-me">
             <div class="container">
-                <div class="row d-felx justify-content-around">
+                <div class="row pt-5 d-felx justify-content-around">
                     <div class="col-10 col-lg-5 about-text">
                         <h3 class="text-center pb-3">About Me</h3>
                         <p>For the past 13 years, I have worked mainly in the hospitality and social care, but time came to do something
@@ -72,9 +74,6 @@
                     <div class="col-8 col-lg-5">
                         <img src="./img/profile_photo.jpg" class="img-fluid rounded" alt="Profile picture">
                     </div>
-                </div>
-                <div class="arrow-down text-center">
-                    <a href="#my-skills"><i class="fas fa-angle-double-down dark-arrow-down" id="arrow"></i></a>
                 </div>
             </div>
         </div>
@@ -113,7 +112,7 @@
             </div>
         </div>
     </main>
-    <div class="container contact-me">
+    <div class="container contact-me" id="contact-me">
         <h2 class="text-center p-4">Contact Me</h2>
         <div class="row pb-5 d-felx justify-content-around">
             <div class="contact-info col-7 text-center">

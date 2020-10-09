@@ -5,10 +5,13 @@ html {
 .navbar{
     z-index: 100;
 }
-
+.change {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.898);
+}
 
 .top-logo{
-    height: 90px;
+    height: 70px;
 }
 
 li>a{
