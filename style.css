@@ -124,6 +124,10 @@ font-size: 40px;
     align-items: center;
 }
 
+.btn.resume{
+    font-size: 20px;
+    border-radius: 15px;
+}
 
 .fa-file-download{
     font-size: 20px;
