@@ -28,3 +28,4 @@ appear(document.getElementsByClassName('hero-name')[0], 0, 5, 100);
 appear(document.getElementsByClassName('hero-welcome')[0], 0, 5, 150);
 appear(document.getElementsByClassName('arrow-down')[0], 0, 5, 200);
 
+
