@@ -3,13 +3,6 @@ body,
 html {
     height: 100%;
 }
-
-body,
-.smooth-container {
-    scroll-behavior: smooth;
-}
-
-
 #header>.navbar{
     padding-top: 0;
     z-index: 100;
@@ -221,4 +214,39 @@ footer{
     height: 50px;
     padding-top: 8px;
     background-color: #000000;
+}
+
+@media(max-width: 600px) {
+    .hero-name{
+        font-size: 30px;
+    }
+    .myName {
+        font-size: 40px;
+    }
+    .hero>h3{
+        font-size: 25px;
+    }
+    .myResume{
+        font-size: 35px;
+    }
+    
+}
+
+@media(max-width: 410px) {
+    .hero-name {
+        font-size: 25px;
+    }
+
+    .myName {
+        font-size: 35px;
+    }
+
+    .hero>h3 {
+        font-size: 20px;
+    }
+
+    .myResume {
+        font-size: 30px;
+    }
+
 }
