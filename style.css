@@ -3,6 +3,9 @@ body,
 html {
     height: 100%;
 }
+
+/*-------------- HEADER --------------*/
+
 #header>.navbar{
     z-index: 100;
 }
@@ -85,7 +88,7 @@ font-size: 40px;
         font-size: 70px;
     }
     
-    @-webkit-keyframes arrow-jump {
+    @keyframes arrow-jump {
         0% {
             opacity: 0;
         }
@@ -121,7 +124,7 @@ font-size: 40px;
         /* IE 10+, Fx 29+ */
 }
 
-
+/*-------------- ABOUT ME --------------*/
 
 .about-me {
     background-color: #ececec;
@@ -149,9 +152,7 @@ font-size: 40px;
     color: #000000;
 }
 
-.dark-arrow-down{
-    color: rgb(84, 84, 84);
-}
+/*-------------- MY-SKILLS --------------*/
 
 .mys-skills {
     box-sizing: border-box;
@@ -204,6 +205,8 @@ font-size: 40px;
 
 }
 
+/*-------------- CONTACT-ME --------------*/
+
 .contact-info{
     padding-top: 50px;
 }
@@ -227,12 +230,15 @@ font-size: 40px;
     color: #000000;
 }
 
+/*-------------- FOOTER --------------*/
 
 footer{
     height: 50px;
     padding-top: 8px;
     background-color: #000000;
 }
+
+/*-------------- @MEDIA --------------*/
 
 @media(max-width: 600px) {
     .hero-name{

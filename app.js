@@ -17,9 +17,7 @@ function appear(elm, i, step, speed) {
             //if 1-opaque or 0-transparent, stop
             return;
         }
-        //modern browsers
         elm.style.opacity = opacity;
-        //older IE
         elm.style.filter = 'alpha(opacity=' + opacity * 100 + ')';
     }, speed);
 }
