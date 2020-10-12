@@ -52,7 +52,7 @@ $(window).on('scroll', function () {
 
 $('body').scrollspy({
     target: '#navbarResponsive',
-    offset: 56
+    offset: 150,
 });
 
 // Smooth scroll
