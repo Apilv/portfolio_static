@@ -49,6 +49,7 @@ $('body').scrollspy({
     offset: 56
 });
 
+
 $('a[href*="#"]').on('click', function (e) {
   e.preventDefault()
 

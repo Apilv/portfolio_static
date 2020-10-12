@@ -3,19 +3,12 @@ body,
 html {
     height: 100%;
 }
-
-body,
-.smooth-container {
-    scroll-behavior: smooth;
-}
-
-
 #header>.navbar{
     padding-top: 0;
     z-index: 100;
 }
 .change {
-    height: 80px;
+    height:60px;
     background-color: rgba(0, 0, 0, 0.898);
 }
 
@@ -24,7 +17,7 @@ body,
 }
 
 .top-logo{
-    height: 70px;
+    height: 50px;
 }
 
 li>a{
@@ -130,9 +123,9 @@ font-size: 40px;
 
 
 
-.about-me{
-    height: 40vh;
+.about-me {
     background-color: #fff;
+    box-sizing: border-box;
 }
 
 .vertical-center {
@@ -160,11 +153,9 @@ font-size: 40px;
     color: rgb(84, 84, 84);
 }
 
-
-.my-skills {
-    background-color: #f3f3f3;
+.mys-skills {
+    box-sizing: border-box;
 }
-
 .skills-icons>div{
     font-size: 80px;
     width: 100px;
@@ -190,11 +181,12 @@ font-size: 40px;
 
 #contact{
     padding-top: 80px;
+    box-sizing: border-box;
 
 }
 
 .contact-info{
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .fa-envelope{
@@ -221,4 +213,105 @@ footer{
     height: 50px;
     padding-top: 8px;
     background-color: #000000;
+}
+
+@media(max-width: 600px) {
+    .hero-name{
+        font-size: 30px;
+    }
+    .myName {
+        font-size: 40px;
+    }
+    .hero>h3{
+        font-size: 25px;
+    }
+    .myResume{
+        font-size: 35px;
+    }
+    
+}
+
+@media(max-width: 410px) {
+    .hero-name {
+        font-size: 25px;
+    }
+
+    .myName {
+        font-size: 35px;
+    }
+
+    .hero>h3 {
+        font-size: 20px;
+    }
+
+    .myResume {
+        font-size: 30px;
+    }
+
+        .about-me {
+            padding-top: 30px;
+        }
+
+        .skills-icons>div {
+            font-size: 40px;
+            width: 100px;
+            height: 80px;
+        }
+
+        .fa-php {
+            font-size: 35px;
+        }
+
+        .btn.resume,
+        .fa-file-download {
+            font-size: 14px;
+        }
+
+        .fa-github {
+            font-size: 30px;
+        }
+
+        .my-skills {
+            padding-top: 30px;
+        }
+        }
+
+        @media(max-width: 320px) {
+
+            .fa-angle-double-down {
+                padding-top: 50px;
+                font-size: 40px;
+            }
+
+            .hero {
+                padding-top: 200px;
+            }
+
+            .about-me {
+                padding-top: 30px;
+            }
+
+            h2 {
+                font-size: 25px !important;
+            }
+
+            #contact {
+                padding-top: 30px;
+            }
+
+            .fa-envelope {
+                font-size: 20px;
+            }
+
+            .fa-arrow-right {
+                font-size: 10px;
+            }
+
+            .fa-phone-alt {
+                font-size: 20px;
+            }
+
+            .fa-linkedin {
+                font-size: 20px;
+            }
 }
