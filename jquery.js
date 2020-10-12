@@ -1,4 +1,4 @@
-$(window).scroll(function () {    
+$(window).on('scroll',function () {    
     
     let scroll = $(window).scrollTop();
     
@@ -39,18 +39,24 @@ $(window).on('resize', function () {
 $(window).on('scroll', function () {
 
     $(".navbar-togler").addClass("collapsed");
-        $(".navbar-collapse").removeClass("show");  
+    $(".navbar-collapse").removeClass("show");  
         
 });
 
 
-
-
-
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
+$('body').scrollspy({
     target: '#navbarResponsive',
     offset: 56
-  });
+});
 
+$('a[href*="#"]').on('click', function (e) {
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrollTop: $($(this).attr('href')).offset().top,
+    },
+    500,
+    'linear'
+  )
+})
