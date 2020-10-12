@@ -1,4 +1,6 @@
-$(window).on('scroll',function () {    
+// Adds bg color to menu after it pass hero section
+
+$(window).on('scroll', function () {    
     
     let scroll = $(window).scrollTop();
     
@@ -9,6 +11,7 @@ if (scroll >= 650) {
 }
 });
 
+// Adds bg color to burger menu
 
 $(window).on('click', function(){
     
@@ -26,6 +29,8 @@ $(window).on('click', function(){
     }
 });
 
+//Removes burger bg color when burger is inactive
+
 $(window).on('resize', function () {
     
     let windowWidth = $(window).width();
@@ -35,20 +40,22 @@ $(window).on('resize', function () {
         }
 });
 
+// Colapse Nav menu on scroll
 
 $(window).on('scroll', function () {
 
     $(".navbar-togler").addClass("collapsed");
     $(".navbar-collapse").removeClass("show");  
-        
 });
 
+// Highlights menu items on scroll
 
 $('body').scrollspy({
     target: '#navbarResponsive',
     offset: 56
 });
 
+// Smooth scroll
 
 $('a[href*="#"]').on('click', function (e) {
   e.preventDefault()
@@ -61,3 +68,13 @@ $('a[href*="#"]').on('click', function (e) {
     'linear'
   )
 })
+
+//Adds animated divider in my-skills section
+
+$(document).on('scroll', function() {
+    if( $(this).scrollTop() >= $('#about-me').position().top ){
+            $(".vertical-line").addClass("divider");
+    } else {
+        $(".vertical-line").removeClass("divider");
+    }
+});
